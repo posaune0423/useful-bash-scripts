@@ -1,5 +1,9 @@
 #!/bin/bash
 
+
+#####  Usage  #####
+# sh removeJps.sh {extension you want to leave} {extension you want to remove}
+
 path=$1
 ext=$2
 ext2=$3

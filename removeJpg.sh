@@ -1,12 +1,15 @@
 #!/bin/bash
 
-images=`find . -name "*.CR2"`;
-echo $images
+path=$1
+ext=$2
+ext2=$3
+images=`find $path -name "*.$ext"`;
+
 for fname in $images; do
   # remove extension
-  name="${fname%.*}"
-  array=(`find . -name "*${name:2}*"`)
+  name=`basename ${fname%.*}`
+  array=(`find $path -name "*$name*"`)
   if [ ${#array[*]} -gt 1 ] ; then
-    rm "$name.JPG"
+    echo "$name.$ext2"
   fi
 done

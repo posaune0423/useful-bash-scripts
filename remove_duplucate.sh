@@ -2,7 +2,11 @@
 
 
 #####  Usage  #####
+# A simple bash script for removing files which have same filename 
+# but different extension in the given directory
+
 # sh removeJps.sh {extension you want to leave} {extension you want to remove}
+
 
 path=$1
 ext=$2

@@ -1,6 +1,9 @@
 #!/bin/bash
 
 ### Usage ####
+# A simle bash script working with misspell 
+# which corrects spell miss detected by misspell command
+
 # misspell <file path> | ./replace.sh
 
 

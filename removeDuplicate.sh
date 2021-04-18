@@ -14,6 +14,6 @@ for fname in $images; do
   name=`basename ${fname%.*}`
   array=(`find $path -name "*$name*"`)
   if [ ${#array[*]} -gt 1 ] ; then
-    echo "$name.$ext2"
+    rm "$name.$ext2"
   fi
 done
